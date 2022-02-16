@@ -12,6 +12,7 @@
 	-o-perspective: 500px;
 	-ms-perspective: 500px;
 	perspective: 500px;
+	border-radius: 20px;
 }
 
 .view .slice{
@@ -36,7 +37,6 @@
 	-o-transition: -o-transform 150ms ease-in-out;
 	-ms-transition: -ms-transform 150ms ease-in-out;
 	transition: transform 150ms ease-in-out;
-		
 }
 
 .view div.view-back{
