@@ -4,8 +4,12 @@
     box-sizing: border-box;
 }
 
+html { 
+    background:  url(https://c.tenor.com/Q75N9LZ267cAAAAC/oiwa-tribe-codm.gif) no-repeat center center fixed; 
+    background-size: cover;
+  }
+
 body{
-    background-image: linear-gradient(90deg, green, blue);
     font-family: 'Poppins', sans-serif;
     margin: 0;
     display:flex;
@@ -18,7 +22,7 @@ body{
 }
 
 .btn{
-    background-color: rebeccapurple;
+    background-image: linear-gradient(90deg, purple, blue);
     border:none;
     border-radius: 5px;
     color:#fff;
