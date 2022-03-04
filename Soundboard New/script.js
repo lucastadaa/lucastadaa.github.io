@@ -1,4 +1,4 @@
-const sounds = ['applause', 'bababoey', 'boo', 'cowbell', 'gasp', 'intervention', 'tada', 'victory', 'wrong'];
+const sounds = ['Cowbell A#', 'CowbellA', 'CowbellC', 'Cowbell D#', 'Cowbell F#', 'CowbellF', 'CowbellG', 'bababoey'];
 
 sounds.forEach(sound => {
     const btn = document.createElement('button');
@@ -12,3 +12,12 @@ sounds.forEach(sound => {
 
     document.getElementById('buttons').append(btn);
 })
+
+
+function stopPlaying() {
+    sounds.forEach(sound => {
+        const audio = document.getElementById(sound);
+        audio.pause();
+        audio.currentTime = 0;
+    })
+}
