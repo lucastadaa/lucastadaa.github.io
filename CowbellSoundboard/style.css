@@ -4,14 +4,14 @@
     box-sizing: border-box;
 }
 
+/*Lisätään sivustolle taustakuva, joka on GIF-tiedosto, se looppaa taustalla*/
 html { 
     background:  url(https://c.tenor.com/Q75N9LZ267cAAAAC/oiwa-tribe-codm.gif) no-repeat center center fixed; 
     background-size: cover;
   }
 
 body{
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     display:flex;
     flex-wrap: wrap;
     align-items: center;
@@ -19,10 +19,11 @@ body{
     min-height: 100vh;
     overflow:hidden;
     text-align: center;
+    text-decoration: line-through;
 }
 
 .btn{
-    background-image: linear-gradient(90deg, purple, blue);
+    background-image: linear-gradient(90deg, purple, blue); /*Tehdään nappien väristä kaksi väriset*/
     border:none;
     border-radius: 5px;
     color:#fff;
@@ -33,10 +34,15 @@ body{
     cursor:pointer;
 }
 
+/*Luodaan napille ympärys, kun sitä painetaan*/
 .btn:focus{
-    outline:0;
+    outline: 1px;
+    outline-offset: 5px;
+    outline-style: ridge;
+    outline-color:rgba(114, 53, 172, 0.63);
+    outline-width: 5px;
 }
 
 .btn:hover{
-    opacity:0.9;
+    opacity:0.9; /*Kun kursori on napin päällä, nappi samenee*/
 }
